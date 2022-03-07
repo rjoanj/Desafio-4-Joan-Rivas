@@ -15,10 +15,71 @@
     transition: width 2s, height 2s;
 }
 
-    .pb-video-frame:hover {
-        height: 300px;
-    }
+.pb-video-frame:hover {
+    height: 300px;
+}
 
 .pb-row {
     margin-bottom: 10px;
+}
+
+.center{
+    align-items: center;
+}
+
+.animacion1 {
+    animation-name: derecha;
+    animation-duration: 2s;
+}
+
+@keyframes derecha{
+    0%{
+        transform: translateX(300px);
+
+    }
+}
+
+.animacion2 {
+    animation-name: izquierda;
+    animation-duration: 2s;
+}
+
+@keyframes izquierda{
+    0%{
+        transform: translateX(-300px);
+    }
+}
+.animacion3 {
+    animation-name: imagenes;
+    animation-duration: 2s;
+}
+
+@keyframes imagenes{
+    0%{
+        transform: scale(0.3);
+    }
+}
+
+.animacion4 {
+    animation-name: abajo;
+    animation-duration: 2s;
+}
+
+@keyframes abajo{
+    0%{
+        transform: scale(1.5);
+
+    }
+}
+
+.animacion5 {
+    animation-name: opacidad;
+    animation-duration: 2s;
+}
+
+@keyframes opacidad{
+    0%{
+        opacity: 0;
+
+    }
 }

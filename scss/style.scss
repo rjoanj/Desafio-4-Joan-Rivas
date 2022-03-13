@@ -1,26 +1,14 @@
-* {
-    font-family: 'Roboto', sans-serif;
-}
+@import "../scss/animaciones";
+@import "../scss/fuentes";
+@import "../scss/_colores.scss";
+
 
 .pb-video-container {
     padding-top: 20px;
 }
 
-.pb-video {
-    border: 1px solid #e6e6e6;
-    padding: 5px;
-}
-
-.pb-video:hover {
-    background: #2c3e50;
-}
-
 .pb-video-frame {
     transition: width 2s, height 2s;
-}
-
-.pb-video-frame:hover {
-    height: 300px;
 }
 
 .pb-row {
@@ -31,62 +19,3 @@
     align-items: center;
 }
 
-.animacion1 {
-    animation-name: derecha;
-    animation-duration: 2s;
-}
-
-@keyframes derecha{
-    0%{
-        transform: translateX(300px);
-
-    }
-}
-
-.animacion2 {
-    animation-name: izquierda;
-    animation-duration: 2s;
-}
-
-@keyframes izquierda{
-    0%{
-        transform: translateX(-300px);
-    }
-}
-.animacion3 {
-    animation-name: imagenes;
-    animation-duration: 2s;
-}
-
-@keyframes imagenes{
-    0%{
-        transform: scale(0.3);
-    }
-}
-
-.animacion4 {
-    animation-name: abajo;
-    animation-duration: 2s;
-}
-
-@keyframes abajo{
-    0%{
-        transform: scale(1.5);
-    }
-}
-
-.animacion5 {
-    animation-name: opacidad;
-    animation-duration: 2s;
-}
-
-@keyframes opacidad{
-    0%{
-        opacity: 0;
-
-    }
-}
-
-div ul li:hover{
-    scale: 1.1;
-}

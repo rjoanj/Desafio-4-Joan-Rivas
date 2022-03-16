@@ -47,12 +47,32 @@ div ul li:hover {
 * {
   font-family: 'Roboto', sans-serif; }
 
-.pb-video {
+.pb-video, .pb-video:hover {
   border: 1px solid #e6e6e6;
   padding: 5px; }
 
 .pb-video:hover {
-  background: color1; }
+  background: #2c3e50; }
+
+@media (max-width: 1200px) {
+  span {
+    color: red; } }
+
+@media (max-width: 992px) {
+  span {
+    color: aqua; } }
+
+@media (max-width: 768px) {
+  span {
+    color: yellow; } }
+
+@media (max-width: 576px) {
+  span {
+    color: blue; } }
+
+@media (max-width: 0) {
+  span {
+    color: chartreuse; } }
 
 .pb-video-container {
   padding-top: 20px; }

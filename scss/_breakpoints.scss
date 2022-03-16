@@ -1,0 +1,27 @@
+$breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+
+@mixin breakpoint($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media (max-width: #{map-get($breakpoints, $size)}) {
+            @content;
+        }
+    }
+}
+
+span{
+  @include breakpoint (xl){
+    color: red;
+  }
+  @include breakpoint (lg){
+    color: aqua;
+  }
+  @include breakpoint (md){
+    color: yellow;
+  }
+  @include breakpoint (sm){
+    color: blue;
+  }
+  @include breakpoint (xs){
+    color: chartreuse;
+  }
+}
